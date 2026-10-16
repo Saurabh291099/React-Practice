@@ -246,3 +246,23 @@ const newArray = [1, 2, 3, 2, 4, 2, 5,];
 // }
 
 // console.log(toggleCase("SaUraBh")); // Output: "sAuRaBH"
+
+
+const data = [ 
+    { id: 1, name: "computer",parentId: "" },
+    { id: 2, name: "Hard disk", parentId: 1 },
+    { id: 4, name: "Mobile", parentId: ""},
+    { id: 3, name: "Camera", parentId: 4}, 
+    { id: 5, name: "bottle", parentId: ""} 
+   ]
+  
+
+const dropDown = data
+  .filter(item => !item.parentId)
+  .map(menu => ({
+    ...menu,
+    submenu: data.filter(item => item.parentId === menu.id),
+  }));
+
+
+console.table(dropDown);
