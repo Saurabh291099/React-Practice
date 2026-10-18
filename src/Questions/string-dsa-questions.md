@@ -5,6 +5,8 @@ For frontend developer interviews. Solve in JavaScript. For each one, say the ti
 
 ---
 
+<!-- frequency counting, two pointers, searching, sorting  -->
+
 ## LEVEL 1: EASY (warm-up, 15 min each)
 
 1. **Reverse a string** — `"hello"` → `"olleh"`. Do it without `.reverse()`.

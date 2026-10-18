@@ -1,3 +1,7 @@
+
+
+<!-- frequency counting, two pointers, searching, sorting -->
+
 Level 1-------------------------------------
 Reverse a string
 Check palindrome
