@@ -65,7 +65,7 @@
 //         }   
 
 //         if(!/[a-zA-Z0-9]/i.test(str[right])){
-//             right--;
+//             right--; 
 //             continue;
 //         }
 
@@ -80,3 +80,6 @@
 //     return true;
 // }
 // console.log(isPalidrome("A man, a plan, a canal: Panama"))
+
+
+// 3. **Valid anagram** — `"listen"`, `"silent"` → `true`. *(frequency map)* 
