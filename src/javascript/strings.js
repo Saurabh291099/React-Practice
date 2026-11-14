@@ -1,85 +1,49 @@
-//1.  Reverse a string 
-// let str =  "Saurabh Sharma";
-// let reversedString = str.split("")
-// let newString = reversedString.reverse()
-// let finalString = newString.join("")
-// console.log(reversedString)
-// console.log(newString)
-// console.log(finalString)
-
-// methos 1 
-// let reversedString = str.split("").reverse().join("")
-// method 2 
-// Best for reuseability and code redablity for production code
-// function reverseString1(str) {
-//     return str.split("").reverse().join("");
-// }
-// console.log(reverseString1("Saurabh Sharma"))
-
-// function reverseString2(str) {
-//     let reversedString = ''
-//     for (let i = str.length -1; i >= 0; i--){
-//         reversedString += str[i]
-//     }
-//     return reversedString
-// }
-// console.log(reverseString2('Saurabh sharma '))
-
-// 2. **Valid palindrome** — Ignore non-alphanumerics and case. `"A man, a plan, a canal: Panama"` → `true`. *(two pointers)*
-
-// Method 1 
-
-// let str = "A man, a plan, a canal: Panama";
-// let str = "A man, a plan, a canal: Panama: 6728| , t3626@# ||";
-// let newStr = str.replace(/[^a-zA-Z]/g, "").toLowerCase();
-// let reversedString = newStr.split("").reverse().join("");
-// console.log(reversedString)
-// console.log(newStr)
-// console.log(reversedString === newStr)
-
-// Method 2 
-
-// let str = "A man, a plan, a canal: Panama";
-// let str = "A man, a plan, a canal: Panama: 6728| , t3626@# ||";
-
-// function isPalidrome(str){
-//     let newStr = str.replace(/[^a-zA-Z0-9]/g, "").toLowerCase();
-// let reversedString = newStr.split("").reverse().join("");
-// return reversedString === newStr;
-// }
-
-// console.log((isPalidrome(str)))
+// 1. **Reverse a string** — `"hello"` → `"olleh"`. Do it without `.reverse()`. 
 
 
-// Method 3: Two pointers approach 
 
-// let str = "A man, a plan, a canal: Panama";
-// function isPalidrome(str){
-//     let left = 0;
-//     let right = str.length - 1;
+// Method 1: Understanding a problem and solving it step by step.
 
-//     while(left < right){
-//         if(!/[a-zA-Z0-9]/i.test(str[left])){
-//             left++;
-//             continue;
-//         }   
+// let myString = 'hello';
+// const reverseString = myString.split('');
+// const splitString = reverseString.reverse();
+// const finalReversedString = splitString.join('');
 
-//         if(!/[a-zA-Z0-9]/i.test(str[right])){
-//             right--; 
-//             continue;
-//         }
-
-//         if(str[left].toLowerCase() !== str[right].toLowerCase()){
-//             return false;
-//         }
-
-//         left++;
-//         right--;
-
-//     }
-//     return true;
-// }
-// console.log(isPalidrome("A man, a plan, a canal: Panama"))
+// console.log(reverseString);
+// console.log(splitString);
+// console.log(finalReversedString);
 
 
-// 3. **Valid anagram** — `"listen"`, `"silent"` → `true`. *(frequency map)* 
+// Method 2: Using a for loop to reverse the string.
+
+
+// let myString = 'hello';
+// let reversedString = '';
+
+// for(let i = myString.length - 1; i >= 0; i--){
+
+// for understanding purpose, we can also use the following code:
+    // reverseString = reverseString + myString[i];
+    // optimizes way 
+    // reversedString += myString[i];
+
+    
+// };
+
+// console.log(reversedString);
+
+
+// Method 3: Using recursion to reverse the string.
+
+// this is the best approach to reverse a string using recursion for interview purpose. 
+function reverseString(str){
+    let result = [];
+
+    for(let i = str.length -1; i >=0; i--){
+        result.push(str[i]);
+
+    }    
+    return result.join('');
+}
+
+console.log(reverseString('hello'));
