@@ -14,12 +14,11 @@ Legend: 🟢 Easy · 🟡 Medium · 🔴 Hard
 # LEVEL 1: Fundamentals
 
 ## 1. Reverse a string
-- 🟢 **Reverse a string** without using `.reverse()`.
-  - `"hello"` → `"olleh"`
-  - *Hint:* two pointers swapping from both ends (convert to array first, since strings are immutable).
-- 🟢 **Reverse words in a sentence** — `"the sky is blue"` → `"blue is sky the"`. Handle leading, trailing and multiple spaces.
-- 🟡 **Reverse each word but keep word order** — `"I love JS"` → `"I evol SJ"`.
-- 🟡 **Reverse only letters, keep special characters in place** — `"a-bC-dEf"` → `"f-Ed-Cba"`.
+- 🟢 **Reverse a string** without using `.reverse()`. - `"hello"` → `"olleh"` [✔ Done]
+  - *Hint:* two pointers swapping from both ends (convert to array first, since strings are immutable).[✔ Done]
+- 🟢 **Reverse words in a sentence** — `"the sky is blue"` → `"blue is sky the"`. Handle leading, trailing and multiple spaces.[✔ Done]
+- 🟡 **Reverse each word but keep word order** — `"I love JS"` → `"I evol SJ"`.[✔ Done]
+- 🟡 **Reverse only letters, keep special characters in place** — `"a-bC-dEf"` → `"f-Ed-Cba"`.[✔ Done]
 - 🔴 **Reverse a string with Unicode/emoji safely** — `"hi👋"` should not break the emoji. *Hint:* `Array.from(str)` or `[...str]` handles code points.
 - **Follow-up:** Why is `str += char` in a loop potentially O(n²)? How do you avoid it?
 
