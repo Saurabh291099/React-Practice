@@ -1,0 +1,1 @@
+// **Valid palindrome** — Ignore non-alphanumerics and case. `"A man, a plan, a canal: Panama"` → `true`. *(two pointers)*
